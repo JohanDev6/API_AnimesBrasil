@@ -35,7 +35,7 @@ exports.list = function(req, res){
          Arrlinks.push({
             'id_page': index,
             'title': nome,
-            'AnimeDetails': req.protocol + '://' + req.get('host') + 'anime/' + links,
+            'AnimeDetails': req.protocol + '://' + req.get('host') + '/anime/' + links,
             'slug': links,
             'posterImg': img
          })
