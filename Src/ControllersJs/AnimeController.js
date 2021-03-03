@@ -42,7 +42,7 @@ exports.list = function(req, res){
       })
 
     res.send({
-      'nextPage': `http://localhost:3000/listanimes/${parseInt(page) + 1}`,
+      'nextPage': `${req.get('host')}/listanimes/${parseInt(page) + 1}`,
       'animes': Arrlinks
     });
    })
