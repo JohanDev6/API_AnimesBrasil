@@ -15,7 +15,7 @@ app.use(function(req, res, next) {
 routes(app); 
 
 app.listen(process.env.PORT, (err) => {
-    console.log('Servidor da TheAnimeApi Funcionando na porta:' + this.address().port);
+    console.log('Servidor da TheAnimeApi Funcionando');
 });
 
 
