@@ -35,14 +35,14 @@ exports.list = function(req, res){
          Arrlinks.push({
             'id_page': index,
             'title': nome,
-            'AnimeDetails': 'http://localhost:3000/anime/' + links,
+            'AnimeDetails': req.protocol + '://' + req.get('host') + 'anime/' + links,
             'slug': links,
             'posterImg': img
          })
       })
 
     res.send({
-      'nextPage': `${req.get('host')}/listanimes/${parseInt(page) + 1}`,
+      'nextPage': `${req.protocol + '://' + req.get('host')}/listanimes/${parseInt(page) + 1}`,
       'animes': Arrlinks
     });
    })
@@ -101,7 +101,7 @@ exports.detail = function(req, res){
           AnimeDetails.eps.push({
                'ep': numberep,
                'img': img,
-               'url': `http://localhost:3000/episode/${link}` 
+               'url': `&{req.protocol + '://' + req.get('host')}/episode/${link}` 
             }) 
 
       })
