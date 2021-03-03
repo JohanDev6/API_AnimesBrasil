@@ -2,9 +2,9 @@
   "name": "api-animes",
   "version": "1.0.0",
   "description": "Api de Animes para meu Aplicativo",
-  "main": "./src/index.js",
+  "main": "server.js",
   "scripts": {
-    "server": "nodemon ./src/Server.js"
+    "start": "server.js"
   },
   "repository": {
     "type": "git",
