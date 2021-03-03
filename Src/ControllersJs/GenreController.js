@@ -34,13 +34,13 @@ exports.list = function(req, res){
            'id_page': index,
            'title': title,
            'poster_img': poster_img,
-           'url_anime': 'http://localhost:3000/anime/' + link_anime,
+           'url_anime': req.protocol + '://' + req.get('host') + '/anime/' + link_anime,
        })
 
     })
 
     res.send({
-      'nextPage': `http://localhost:3000/genres/${genres}/page/${page}`,
+      'nextPage': `${req.protocol + '://' + req.get('host')}/genres/${genres}/page/${page}`,
       'animes': Animes
     });
    })
@@ -77,13 +77,13 @@ exports.listperpage = function(req, res){
             'id_page': index,
             'title': title,
             'poster_img': poster_img,
-            'url_anime': 'http://localhost:3000/anime/' + link_anime,
+            'url_anime': req.protocol + '://' + req.get('host') + '/anime/' + link_anime,
         })
  
      })
  
      res.send({
-       'nextPage': `http://localhost:3000/genres/${genres}/page/${parseInt(pageparams) + 1}`,
+       'nextPage': `${req.protocol + '://' + req.get('host')}/genres/${genres}/page/${parseInt(pageparams) + 1}`,
        'animes': Animes
      });
     })
@@ -117,7 +117,7 @@ exports.genrelist = function(req, res){
             'id_page': index,
             'title': genres_link,
             'poster_img': img_genre,
-            'url_genre': 'http://localhost:3000/genres/' + genres_link,
+            'url_genre': req.protocol + '://' + req.get('host') + '/genres/' + genres_link,
         })
  
      })
