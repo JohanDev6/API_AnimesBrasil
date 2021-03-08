@@ -9,6 +9,13 @@
 > O Projeto uma Api Crawler construida com NodeJs e Express, a Api pega informações de um site de animes e retorna em Json separado por Episódios, Animes, Categorias etc...
 > o deploy da Api foi feita na Hospedagem Heroku
 
+ ### Recursos Usados
+ 
+ * Express
+ * NodeJs 
+ * Site [WebCrawler](https://www.myanimesonline.biz/animes/)
+ * Heroku [Deploy]
+
 ## EndPoints
 
 ### Todos animes com paginação
