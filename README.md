@@ -1,4 +1,4 @@
-# Api Web Crawler de Animes! :sparkles:
+# Api Crawler de Animes! :sparkles:
 
 [![Repos Badge](https://badges.pufler.dev/repos/JohanDev6)](https://badges.pufler.dev)
 [![Years Badge](https://badges.pufler.dev/years/JohanDev6)](https://badges.pufler.dev)
